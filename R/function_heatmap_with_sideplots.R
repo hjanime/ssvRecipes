@@ -490,7 +490,7 @@ ssvHeatmap2 = function(
                     theme(legend.position = "bottom",
                           legend.direction = "horizontal",
                           legend.justification = "center") +
-                    scale_color_manual(values = side_plot_colors)
+                    scale_color_manual(values = side_plot_colors)+scale_fill_manual(values = side_plot_colors)
             })
         }else{
             agg_plots = lapply(seq_len(nclust), function(i){
